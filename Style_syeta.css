@@ -1,0 +1,92 @@
+/* Fiverr Green + Pastel Yellow Color Palette */
+:root {
+    /* Fiverr Green - Main Brand Color */
+    --fiverr-green: #1DBF73;        /* Official Fiverr green */
+    --fiverr-green-light: #2DD17C;  /* Lighter variant */
+    --fiverr-green-dark: #17A561;   /* Darker variant */
+    
+    /* Pastel Yellow Backgrounds */
+    --pastel-yellow-light: #FFFEF7;  /* Very light cream */
+    --pastel-yellow: #FFF9E6;        /* Soft pastel yellow */
+    --pastel-yellow-medium: #FFF4CC; /* Medium pastel yellow */
+    --pastel-yellow-warm: #FFEFB3;   /* Warm pastel yellow */
+    
+    /* Supporting Colors */
+    --text-dark: #2D3748;
+    --text-medium: #4A5568;
+    --text-light: #718096;
+    --white: #FFFFFF;
+    --border-light: #F0F4F8;
+    --success: var(--fiverr-green);
+    
+    /* Shadows */
+    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+    --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+    --shadow-green: 0 4px 14px rgba(29, 191, 115, 0.15);
+}
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+    background-color: var(--white);
+}
+
+/* FIXED Navigation - No Backdrop Filter for Logo */
+.navbar {
+    background: rgba(255, 255, 255, 0.98) !important;
+    /* REMOVED backdrop-filter to fix logo blur */
+    box-shadow: var(--shadow);
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--border-light);
+    transition: all 0.3s ease;
+}
+
+.navbar.scrolled {
+    background: rgba(255, 255, 255, 1) !important;
+    box-shadow: var(--shadow-lg);
+}
+
+.brand-logo {
+    height: 100px;
+    width: auto;
+    max-width: 300px;
+}
+
+.nav-link {
+    color: var(--text-medium) !important;
+    font-weight: 500;
+    margin: 0 0.5rem;
+    padding: 0.5rem 1rem !important;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--fiverr-green) !important;
+    background: rgba(29, 191, 115, 0.1);
+}
+
+.carousel {
+    width: 100%;
+    max-width: none;
+	margin-top: 90px;
+}
+
+.carousel-caption{
+  color: white; /* Or any color */
+  font-size: 3rem;
+  font-weight: 200;
+  text-align: center;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8); 
+  letter-spacing: 1px;
+  margin-bottom: 0;
+}
